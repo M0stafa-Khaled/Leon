@@ -1,0 +1,125 @@
+/* --------------------- Media Queries ------------------ */
+
+/* ============= Mobile ======= */
+@media screen and (max-width: 767px) {
+
+    /* ========= Components ====== */
+    .sec {
+        padding-top: var(--secondary-padding);
+        padding-bottom: var(--secondary-padding);
+    }
+
+    .special-heading {
+        font-size: 60px;
+    }
+
+    .special-heading+p {
+        margin-top: -20px;
+        font-size: 16px;
+    }
+
+    /* ========= Services ======== */
+    .services {
+        padding-top: var(--secondary-padding);
+        padding-bottom: var(--secondary-padding);
+    }
+
+    .services .services-content {
+        margin-top: 50px;
+    }
+
+    .services .services-content .serv {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* ========= Portfolio ======== */
+    .portfolio .portfolio-content {
+        margin-top: 50px;
+    }
+
+    /* ========= Contact ========== */
+    .contact .contact-content>h3,
+    .contact .contact-content>a {
+        font-size: 20px;
+    }
+
+    .contact .contact-content .social {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .contact-content .social i {
+        margin: 15px 0;
+    }
+}
+
+/* ============= Mobile, Small, Medium ======== */
+
+@media screen and (max-width: 1199px) {
+
+    /* ========== Services ======== */
+    .image-column {
+        display: none;
+    }
+
+    /* ========== About =========== */
+    .about {
+        padding-bottom: var(--main-padding);
+    }
+
+    .about .about-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .about-content .image {
+        margin-bottom: 50px;
+    }
+
+    .about .about-content .image::before,
+    .about .about-content .image::after {
+        display: none;
+    }
+
+    .about .about-content .text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+/* -------------- Containar ------------------- */
+
+/* ============= Small ======== */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* ============= Medium ======= */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* ============= Large ======== */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* --------------------- End Media Queries -------------- */
